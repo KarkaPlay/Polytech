@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Polytech", "Polytech.vcxproj", "{5D2253CB-AEB7-4182-ADC7-63726537CC33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C22988F1-6627-4BC3-9479-589CA42E8750}"
+	ProjectSection(SolutionItems) = preProject
+		Theme4Task1.cpp = Theme4Task1.cpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

@@ -10,5 +10,5 @@ int main()
     int t = a * a;
     a = t * t;
     a = a * a;
-    cout << "A^3 = " << a;
+    cout << "A^8 = " << a;
 }

@@ -6,6 +6,7 @@ int main()
     setlocale(LC_ALL, "Russian");
     int x;
     string num = "" ;
+    cout << "Введите число: ";
     cin >> x;
     int xH = x / 100, xD = x / 10 % 10, xO = x % 10;
     

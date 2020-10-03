@@ -7,8 +7,8 @@ int main()
     int day, month;
     cout << "Введите номер дня: ";
     cin >> day;
-   // cout << "Введите номер месяца: ";
-   // cin >> month;
+    cout << "Введите номер месяца: ";
+    cin >> month;
     
     string date = "";
     if (day > 19 or day < 11) {
@@ -72,5 +72,33 @@ int main()
             date += "девят";
         date += "надцатое";
     }
+
+    date += " ";
+
+    if (month == 1)
+        date += "января";
+    else if (month == 2)
+        date += "февраля";
+    else if (month == 3)
+        date += "марта";
+    else if (month == 4)
+        date += "апреля";
+    else if (month == 5)
+        date += "мая";
+    else if (month == 6)
+        date += "июня";
+    else if (month == 7)
+        date += "июля";
+    else if (month == 8)
+        date += "августа";
+    else if (month == 9)
+        date += "сентября";
+    else if (month == 10)
+        date += "октября";
+    else if (month == 11)
+        date += "ноября";
+    else if (month == 12)
+        date += "декабря";
+
     cout << date;
 }

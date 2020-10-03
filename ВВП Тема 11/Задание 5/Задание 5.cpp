@@ -25,5 +25,5 @@ int main()
 
     d += "число";
 
-    cout << "x - " << d;
+    cout << d;
 }

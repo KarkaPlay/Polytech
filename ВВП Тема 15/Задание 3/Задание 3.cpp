@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <cmath>
 using namespace std;
 
 const double PI = acos(-1.0);
@@ -17,5 +16,5 @@ int main()
     cin >> r1;
     cout << "Введите R2: ";
     cin >> r2;
-    cout << "Радиус кольца = " << RingS(r1, r2);
+    cout << "Площадь кольца = " << RingS(r1, r2);
 }

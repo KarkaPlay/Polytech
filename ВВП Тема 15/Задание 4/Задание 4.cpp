@@ -14,7 +14,10 @@ int Quarter(float x, float y)
     else if (x > 0 and y < 0)
         return 4;
     else
-        cout << "Неверные координаты";
+    {
+        cout << "Неверные координаты\n";
+        return 0;
+    }
 }
 
 int main()
@@ -26,6 +29,8 @@ int main()
         cin >> x;
         cout << "y:";
         cin >> y;
-        cout << "Это " << Quarter(x, y) << "-я четверть\n";
+        if (Quarter(x, y) != 0) {
+            cout << "Это " << Quarter(x, y) << "-я четверть\n";
+        }
     }
 }

@@ -15,10 +15,8 @@ int main()
 
     bool a = true;
     for (int i = 2; i < n; i++)
-    {
         if (N[i] - N[i-1] != N[i-1] - N[i-2])
             a = false;
-    }
 
     if (a == true)
         cout << "Массив содержит арифметическую прогрессию";

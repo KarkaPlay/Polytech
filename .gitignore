@@ -341,3 +341,5 @@ healthchecksdb
 *.vcxproj
 *.filters
 *.pdf
+Example Folder/Test1/Text1.txt
+Example Folder/Test2/Text2.txt

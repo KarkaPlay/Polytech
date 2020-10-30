@@ -29,13 +29,13 @@ int main()
         for (int j = 0; j < n; j++)   //
             if (digit == N[j])        //  Считаем, сколько раз встречается текущее число
                 digitCount++;         //
-        if (digitCount == 2)
+        if (digitCount == 2)  // Если встречается 2 раза
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < n; j++) // Проходимся по всему массиву
             {
-                if (N[j] == digit)
+                if (N[j] == digit)  // Если нашли число, которое встречается 2 раза
                 {
-                    del(N, n, j);
+                    del(N, n, j); // Удаляем его
                     j--;
                 }
             }

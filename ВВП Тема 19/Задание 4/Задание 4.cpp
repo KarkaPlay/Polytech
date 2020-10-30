@@ -5,7 +5,7 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     cout << "Введите размер массива: ";
-    int n, numOfNegative=0;
+    int n, numOfNegative = 0;
     cin >> n;
     float* N = new float[n];
 
@@ -17,7 +17,7 @@ int main()
             numOfNegative++;
     }
 
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
     {
         if (N[i] < 0)
         {
@@ -26,7 +26,7 @@ int main()
             N[i + 1] = 0;
         }
     }
-    
+
     n += numOfNegative;
 
     cout << "Новый массив: ";

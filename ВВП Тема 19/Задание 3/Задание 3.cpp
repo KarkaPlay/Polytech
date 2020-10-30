@@ -7,7 +7,7 @@ int main()
     cout << "Введите размер массива: ";
     int n, indexOfMax, indexOfMin;
     cin >> n;
-    int* N = new int[n];
+    float* N = new float[n];
 
     int min = 9999, max = -9999;
     cout << "Введите элементы массива: ";

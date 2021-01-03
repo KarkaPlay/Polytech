@@ -15,12 +15,8 @@ int main()
 	int k = 0;
 
 	for (int i = 0; i < n; i++)
-	{
 		if (A[i] != A[i + 1])
-		{
 			k++;
-		}
-	}
 
 	int* C = new int[k];
 	int* B = new int[k];
@@ -36,9 +32,7 @@ int main()
 			u = 1;
 		}
 		else
-		{
 			u++;
-		}
 	}
 
 	cout << "Массив C: ";

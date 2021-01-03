@@ -7,13 +7,9 @@ void deleteElement(int *&Array, int &size, int element)
 	int* newA = new int[size];
 
 	for (int i = 0; i < element; i++)
-	{
 		newA[i] = Array[i];
-	}
 	for (int i = element+1; i < size+1; i++)
-	{
 		newA[i - 1] = Array[i];
-	}
 
 	delete[] Array;
 	Array = newA;
@@ -52,9 +48,7 @@ int main()
 			A[startElement] = 0;
 			int j = startElement + 1;
 			for (int k = 0; k < seriesLength-1; k++)
-			{
 				deleteElement(A, n, j);
-			}
 			i = i - seriesLength;
 		}
 	}

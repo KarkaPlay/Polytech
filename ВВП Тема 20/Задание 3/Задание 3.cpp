@@ -54,30 +54,22 @@ int main()
 
 	cout << "Последняя серия: ";
 	for (int i = 0; i < lastSeries.length; i++)
-	{
 		cout << lastSeries.element << " ";
-	}
 	cout << endl << "Серия с номером K: ";
 	for (int i = 0; i < kSeries.length; i++)
-	{
 		cout << kSeries.element << " ";
-	}
 
 	int difference = abs(kSeries.length - lastSeries.length);
 	if (kSeries.length > lastSeries.length)
 	{
 		for (int i = kSeries.startElement + kSeries.length - 1; i < n; i++)
-		{
 			A[i] = A[i + 1];
-		}
 		lastSeries.startElement -= difference;
 	}
 	if (lastSeries.length > kSeries.length)
 	{
 		for (int i = n; i > kSeries.startElement + kSeries.length - 1; i--)
-		{
 			A[i] = A[i - 1];
-		}
 		lastSeries.startElement += difference;
 	}
 
@@ -88,9 +80,7 @@ int main()
 		j++;
 	}
 	for (int i = lastSeries.startElement; i < n; i++)
-	{
 		A[i] = kSeries.element;
-	}
 
 	cout << endl;
 	for (int i = 0; i < n; i++)
